@@ -1,3 +1,4 @@
+# O log(log(N))
 def my_sqrt_newton(x: int) -> int:
     if x == 0:
         return 0
