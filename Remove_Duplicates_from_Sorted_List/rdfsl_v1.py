@@ -2,18 +2,12 @@ from list_node import ListNode
 
 def delete_duplicates(head: ListNode) -> ListNode:
     node = head
-    _next = node.next
 
-    while True:
-        if node.val != _next.val:
-            node = _next
-            _next = node.next
+    while node and node.next:
+        if node.val != node.next.val:
+            node = node.next
         else:
-            while node.val == _next.val:
-                _next = _next.next
-                if _next is None: break
-            node.next = _next
-        if _next is None: break
+            node.next = node.next.next
 
     return head
 
