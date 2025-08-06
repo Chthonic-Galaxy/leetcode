@@ -4,3 +4,5 @@ venv
 env
 
 S_*
+
+__pycache__/*

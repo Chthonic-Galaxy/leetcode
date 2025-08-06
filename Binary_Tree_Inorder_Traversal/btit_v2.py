@@ -13,8 +13,6 @@ def binary_tree_travese(root: TreeNode):
         result.append(cur.val)
         cur = cur.right
         
-
-
     return result
 
 
